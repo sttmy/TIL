@@ -1,0 +1,25 @@
+<!-- CSS p89 -->
+<!-- position: absolute -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS위치속성</title>
+    <style>
+        *{margin:0; padding:0}   /*marin, padding 초기화*/
+        p{width: 500px; height: 200px; background-color: #eee; 
+          border: 1px solid #ccc; line-height: 2;}
+        #pos1{position:absolute; left:50px; top:50px;}  /*처음 왼쪽position은 고정*/
+        #pos2{position:absolute; right:100px; top:100px;} /*오른쪽position은 고정 */
+        #pos3{position:absolute; left:100px; bottom:100px;} /*왼쪽/바닥position은 고정 */
+    </style>
+</head>
+<body>
+    <p id="pos1">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p id="pos2">Blanditiis magni enim omnis architecto excepturi voluptatibus ab laboriosam debitis maxime. </p>
+    <p id="pos3">Eligendi ex eaque, dolores rem alias tempora nihil odio neque quaerat.</p>
+    <!-- <p id="fixed">Non recusandae iure molestiae voluptatum explicabo itaque maiores amet porro dolor, eligendi ratione eos illum harum vitae totam, hic voluptate? Sunt, ab?</p> -->
+</body>
+</html>

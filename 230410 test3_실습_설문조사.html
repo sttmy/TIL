@@ -1,0 +1,66 @@
+<!-- p91 실습 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사page</title>
+</head>
+<body>
+    <fieldset>
+        <h1>nufyn 회사 설문조사</h1>
+        <ui>
+            <li>
+                <label for="name">이름: </label>
+                <input type="text" id="name" required placeholder="이름을 반드시 입력해주세요">
+            </li>
+            <li>
+                <label for="addr">주소: </label>
+                <input type="text" id="addr" required>
+            </li>
+            <li>
+                <label for="comp">회사: </label>
+                <input type="text" id="comp" value="nufyn회사" required readonly>
+            </li>
+            <li>
+                <label for="sex">성별: </label>
+                </label><input type="radio" value="m"> 남</label>
+                </label><input type="radio" value="f"> 여</label>
+            </li>
+            <li>
+                <label for="phone">전화번호 앞자리: </label>
+                </label><input type="radio" value="etc"> 기타</label>
+                </label><input type="radio" value="010"> 010</label>
+            </li>
+            <li>
+                <label for="pet">좋아하는 애완동물은? </label>
+                </label><input type="checkbox" value="dog"> 개</label>
+                </label><input type="checkbox" value="cat"> 고양이</label>
+                </label><input type="checkbox" value="snk"> 도마뱀</label>
+                </label><input type="checkbox" value="ant"> 개미</label>
+            </li>
+            <li>
+                <label for="id">ID: </label>
+                <input type="text" id="name" required placeholder="ID">
+            </li>
+            <li>
+                <label for="pw">PW: </label>
+                <input type="password" id="pw" required placeholder="Password">
+            </li>
+            <label> 
+                <select>   
+                    <option value="010">010</option>  
+                    <option value="016">016</option>
+                    <option value="017">017</option>  
+                    <option value="019">019</option>  
+                </select>
+            </label>
+            <fieldset>
+                <textarea name="g" id="" cols="40" rows="5" placeholder="Memo"> </textarea>
+            </fieldset>
+
+    </fieldset>
+</body>
+</html>

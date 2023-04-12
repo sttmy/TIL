@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{list-style:none;}
+        li{width:120px; display:inline-block; margin:10px;}
+        li a{padding: 5px 20px; font-size:14px;
+        text-decoration: none; font-weight: bold;}
+        a[href]{    /*href를 속성선택자로 사용*/
+            background: yellow; border:1px solid #ccc;
+            font-weight: normal;
+        }
+        li a[href="#"] {cursor:default;}  /*링크도 속성선택자로 사용가능*/
+         /*cursor: 커서 모양 설정, default는 손가락모양으로 바뀌지 않음*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인메뉴: </a> </li>
+        <li><a href="#">메뉴1 </a> </li>
+        <li><a href="test8_text field.html">메뉴2 </a> </li>
+        <li><a href="test9_type datetime.html">메뉴3 </a> </li>
+        <li><a href="test7_IDPW.html">메뉴4 </a> </li>
+    </ul>
+</body>
+</html>

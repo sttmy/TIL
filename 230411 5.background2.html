@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 1100px;
+            margin: 50px auto;
+        }
+        .box{
+            float: left;
+            border: 1px solid #333; 
+            width: 300px; height: 300px; margin: 20px;   /*원본보다 작으면 짤림*/
+            background: url("images/bg4.jpg") no-repeat left top;
+            /* background-size: auto; */
+        }
+        #bg1{background-size: auto;}
+        #bg2{background-size: 200px;}   /*너비만 주면, 높이는 자동계산*/
+        #bg3{background-size: 50%;}     /*원본 너비 높이의 50%, 600*400의 50%*/
+        #bg4{background-size: 100% 100%;}   /*무조건 다 집어넣음(이미지변형됨)*/
+        #bg5{background-size: contain;}   /*완전히 덮도록 긴 변에 맞춤(이미지가 다 보이도록 함)*/
+        #bg6{background-size: cover;}    /*완전히 덮도록 짧은 변에 맞춤*/
+        #bg7{background-size: 100%;}   /*이미지가 다 보이도록 함*/
+    </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box" id="bg1"></div>
+    <div class="box" id="bg2"></div>
+    <div class="box" id="bg3"></div>
+    <div class="box" id="bg4"></div>
+    <div class="box" id="bg5"></div>
+    <div class="box" id="bg6"></div>
+  </div>  
+
+</body>
+</html>

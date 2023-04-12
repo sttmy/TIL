@@ -1,0 +1,62 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form2.css">
+    <title>레드향 주문하기</title>
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <form>
+        <fieldset>
+            <legend>배송정보</legend>
+            <ui id="shipping">   <!-- css적용: shipping 영향을 받음 -->                
+                <li>
+                    <label for="prod">주문상품</label>
+                    <input type="text" id="prod" value="상품용 3kg" readonly>
+                            <!-- readonly: 기본값, 읽어오기만 함      -->
+                </li>
+                <li>
+                    <label for="user_name">이름</label>
+                    <input type="text" id="user_name" required autofocus>
+                            <!-- required: 필수값으로 지정      -->
+                            <!-- autofocus: 자동적으로 먼저 입력되도록 커서 위치 -->
+                </li>
+                <li>
+                    <label for="addr">배송주소</label>
+                    <input type="text" id="addr" required>
+                </li>                              
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="email" id="email">
+                            <!-- type="email": @가 없으면 오류 -->
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" required placeholder="하이픈빼고 입력(예:01012345678)">
+                            <!-- type="tel": 전화번호값 -->
+                            <!-- placeholder: 입력 관련 안내메시지 -->
+                </li>
+                <li>
+                    <label for="d_day">배송일자</label>
+                    <input type="date" id="d_day"> <small>(주문일로부터 최소 3일 이후)</small>
+                            <!-- type="date": 날짜표시 -->
+                            <!-- small: 배송관련 메시지 안내 -->
+                </li>
+           </ui> 
+        </fieldset>
+        <div>
+            <input type="submit" value="주문하기">
+                <!-- type="submit": 제출하기 버튼 -->
+            <input type="reset" value="취소하기">
+                <!-- type="reset": 취소하기 버튼 -->
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/test.css"> -->
+    <style>
+    td{text-align: center;}
+    th, td{ padding: 10px 10px;}
+    </style>
+
+</head>
+<body>
+    <h2>테이블 태그</h2>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>  </th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <td>1교시</td>
+            <td rowspan="2">국어</td>
+            <td>수학</td>
+            <td>영어</td>
+            <td colspan="2">체육</td>
+        </tr>
+        <tr>
+            <td>2교시</td>
+            <!-- <td rowspan="2">국어</td> -->
+            <td>음악</td>
+            <td>영어</td>
+            <td>사회</td>
+            <td>과학</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="4">
+        <tr>
+            <th>이름</th>
+            <th>세종대</th>
+            <th rowspan="3">사&nbsp;&nbsp;진</th>
+        </tr>
+        <tr>
+            <th>전화번호</th>
+            <th>010-1234-5689</th>            
+        </tr>
+        <tr>
+            <th>이메일</th>
+            <th>man@sejong.ac.kr</th>            
+        </tr>
+        <tr>
+            <th>주소</th>
+            <th colspan="2">서울특별시 광진구 능동로 209(군자동) 세종대학교 국제교육원</th>            
+        </tr>
+
+    </table>
+    
+</body>
+</html>

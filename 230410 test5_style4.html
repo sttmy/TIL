@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID선택자</title>
+    <style>
+        #header{
+            width: 800px;
+            margin: 0 auto;
+            background-color: red
+
+        }
+        #wrap{
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #aside{
+            width: 200px;
+            float: left;
+            background-color: blue;
+        }
+        #content{
+            width: 600px;
+            float: left;
+            background-color: green;
+        }
+    </style>
+</head>
+<!-- <body> -->
+<body style="margin-top: 40px; margin-left: 40px">
+    <h3> <b>ID 선택자</b> </h3>
+    <hr>
+    <div id="header">
+           구역으로 정해두므로, body태그 밖에 있어도 무관
+
+        <h1><b>#header 태그 </b></h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h1><b>#aside 태그</b></h1>
+        </div>
+        <div id="content">
+            <h1><b>#content 태그</b></h1>
+        </div>    
+</body>
+</html>

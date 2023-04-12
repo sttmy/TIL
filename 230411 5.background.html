@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #fff8dc;
+
+            /* ###### 이미지 반복 ###### */
+            /* background-image: url("images/bg1.jpg"); */
+            background-repeat: no-repeat;   /*반복없음*/
+            
+            /* background-repeat: repeat-x;   가로로만 반복 */
+            /* background-position: bottom;   그냥쓰면 아래 표시가 안됨 */
+            
+            background-repeat: repeat-y;   /*세로로만 반복*/
+            background-position: right;   
+
+            /* ###### 이미지 고정 ###### */
+            background-image: url("images/bg2.png");
+            background-position: top right;   
+            background-attachment: fixed;   
+            background: url("images/bg2.png") np-repeat top right fixed;
+            /*한줄로 정리 가능, 순서 중요*/
+        }
+        #container{
+            height: 100vh;     /*아래 표시됨*/
+        }
+    </style>
+</head>
+<body>
+  <div id="container">
+    <h1>배경꾸미기</h1>
+  </div>  
+
+</body>
+</html>

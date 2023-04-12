@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+          <legend> 상품선택</legend>
+          <p><b>주문할 상품을 선택해주세요</b></p>
+          <ul>
+              <li>
+                  <label><input type="checkbox" value="s3">선물용 3kg</label>
+                  <input type="number" min="0" max="5">개(최대)
+              </li>
+              <li>
+                  <label><input type="checkbox" value="s5">선물용 5kg</label>
+                  <input type="number" min="0" max="3" value="1">개
+              </li>
+              <li>
+                  <label><input type="checkbox" value="f3">가정용 3kg</label>
+                  <input type="range" min="0" max="3" >개
+              </li>
+              <li>
+                  <label><input type="checkbox" value="f5">가정용 5kg</label>
+                  <input type="range" min="0" max="5" value="1">개
+              </li>
+          </ul>
+          <p><b>포장선택</b></p>
+          <ul>
+              <li>
+                  <label><input type="radio" value="s3">선물포장</label>
+              </li>
+              <li>
+                <label><input type="radio" value="s3">선물포장 안 함</label>
+            </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend> 배송정보</legend>
+          <ul>
+              <li>
+                <label for="user_name">이름</label>
+                <input type="text" id="user_id">
+              </li>
+              <li>
+                <label for="addr">배송주소</label>
+                <input type="text" id="addr">
+            </li>
+            <li>
+                <label for="email">이메일</label>
+                <input type="email" id="email">
+            </li>
+            <li>
+                <label for="phone">연락처</label>
+                <input type="tel" id="phone">
+            </li>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="다시 주문하기">
+
+        </div>
+           
+  
+    
+</body>
+</html>

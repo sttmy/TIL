@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트3</title>
+    <style>
+        body{
+            background: url(images/bg.jpg) no-repeat center fixed; /*no-repeat 반복하지 않음*/
+        }
+        p{
+            width: 600px; border: 1px solid #222;
+            padding: 10px; margin:10;
+        }
+        .small-line{line-height: 0.7;}   /* 줄간격 */
+        .big-line{line-height: 2.5;}
+        .italic{font-style: italic; font-size: large;}
+        .tstyle-2{text-decoration: line-through;}   /* underline, line-through, overline */
+        a{text-decoration: none;}
+        h1{
+            font-size: 120px;
+            color: rgba(255, 166, 0, 0.5);
+            text-shadow: 5px 5px 3px #ccc;
+                /* px값: 가로 세로 번짐정도 */
+        }
+    </style> 
+</head>
+<body style="margin-top: 40px; margin-left: 40px">
+    <h1>레드향</h1>
+    <hr>
+    <p>껍질에 붉은 빛이 돌아 <span class="italic">레드향(감평甘平)</span>이라 불린다. 레드향은 한라봉과 귤을 교배한 것으로 
+        일반 귤보다 2~3배 크고, <span class="tstyle-2">과육이 붉고 통통하다.</span></p>
+    <p class="small-line">껍질에 붉은 빛이 돌아 레드향(감평甘平)이라 불린다. 레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    <p class="big-line">껍질에 붉은 빛이 돌아 레드향(감평甘平)이라 불린다. 레드향은 한라봉과 귤을 교배한 것으로 
+        일반 귤보다 2~3배 크고, <a href="#">과육이 붉고 통통하다.</a></p>  
+</body>
+</html>

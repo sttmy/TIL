@@ -1,0 +1,79 @@
+<!-- semantic 태그 -->
+<!-- 안 됨 -->
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+    <meta charset="UTF-8">
+    <title>Semantic Tag</title>
+    <style>
+        header { 
+            background-color: lightgray;
+            height: 100px;
+        }
+        nav {
+            background-color: aquamarine;
+            height: 40px;
+        }
+        main {
+            width: 300%;
+            height: 400px;
+            margin-top: 20px;
+            overflow: hidden;
+            border:1 px solid black;
+        }
+        section {
+            width: 100px;
+            background-color: lightblue;
+            height: 150px;
+        }
+        article{
+            width: 60%;
+            margin-left: 100px;
+            background-color: lightcoral;
+            height: 100px;
+        }
+        aside { 
+            float :right ; 
+            position :relative;
+            top 0; 
+            right 0; 
+            width 40%; 
+            margin-left 5px ;
+            height 600px;
+            background-color: brown;
+        } 
+        footer{
+            background-color: bisque;
+            height: 100px;
+        }
+        header, nav, section, article, footer, aside{
+            text-align: center;
+        }
+    </style>
+ </head>
+ <body>
+    <header>
+        <h2> header부분입니다 </h2>
+        <nav>
+            <h2> nav부분입니다 </h2>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p> section 1 부분입니다 </p>
+        </section>
+        <section>
+            <p> section 2 부분입니다 </p>
+            <article>
+                article 2 부분입니다
+            </article>
+        </section>
+        <aside>
+            <p>aside 부분입니다</p>
+        </aside>
+    </main>
+    <footer>
+        <h2>footer부분입니다</h2>
+    </footer>
+ </body>
+ </html>

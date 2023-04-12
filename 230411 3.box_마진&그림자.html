@@ -1,0 +1,29 @@
+<!-- 마진 중첩 현상: 마진과 마진이 만날 때 마진 값이 큰 쪽으로 겹쳐짐 -->
+
+<!-- 그림자있는 박스 만들기 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 130px;
+            width: 200px;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 30px;
+            border: 2px solid blue;
+        }
+        #box1{box-shadow: 2px -2px 5px 0px;}
+        #box2{box-shadow: 5px 5px 15px 5px blue;}
+    </style>
+
+</head>
+<body>
+    <div id="box1"> </div>
+    <div id="box2"> </div>
+</body>
+</html>

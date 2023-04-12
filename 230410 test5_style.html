@@ -1,0 +1,74 @@
+<!-- 속성값 class는 .으로 받음 -->
+<!-- 속성값 ID는 #으로 받음 -->
+
+ <!-- 스타일시트 만들기 -->
+ <!-- head에 넣거나/  css파일 만들어서 링크로 연결/  tag안에 속성값 넣어서도 가능 -->
+ <!-- inline style > style태그 > css파일 연결 순으로 실행 -->
+ <!-- !important (마지막important먼저 적용)> inline style > #id > .class > tag > css파일 연결 순으로 실행 -->
+
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품소개 페이지</title>
+    <!-- <style>
+        h1{
+            padding:10px;
+            background-color: black;
+            color: #fff;
+        } 
+    </style> -->
+    <style>
+        ul li {    /* ul 아래 있는 li에만 적용 */
+            color:red;
+        }
+        #lecture>li{  /* id나 class 밑에 있는 태그 찾기*/
+            border: 1px solid red;
+        }
+        ul, ol{
+            background-color: aquamarine;
+        }
+        #container {  /* #id니까 #을 붙여줌 */
+            width: 500px;
+            margin: 10px auto;
+        }
+        p {
+            font-style: italic
+        }
+        .accent{
+            border: 1px solid #000;
+            padding: 5px;   /* 안에 글씨 공간? */
+        }
+        .bg{
+            background-color: #ddd;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+ <body>
+    <!-- <h1>레드향</h1> -->
+    <h1 style="color: green">레드향</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol id="lecture">
+        <li>HTML</li>
+        <li>CSS</li>
+            <ol>
+                <li>Selector</li>
+                <li>declartion</li>
+            </ol>
+        <li>JavaScript</li>            
+    </ol>
+    <div id="container">
+        <h1 class="accent bg" style="color: green">레드향2</h1>
+        <p style="color: red;">껍질에 붉은 빛이 돌아<span style="color: blue" class="accent">레드향</span>이라고 부른다</p>
+        <p>레드향은 한라봉과 귤을 교배한 것으로 일반귤보다 2~3배 크다</p>
+        <p>비타민C와 비타민P가 풍부해 건강에 좋다</p>
+    </div>
+ </body>
+ </html>

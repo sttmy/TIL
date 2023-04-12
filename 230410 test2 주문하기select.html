@@ -1,0 +1,41 @@
+<!-- p90~ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <form action="">
+        <fieldset>
+            <legend><b>상품선택</b></legend>
+            <p><b>주문할 상품을 선택해 주세요</b></p>
+            <label> 
+                <select>     <!-- select옵션: dropdown -->
+                    <option value="p3">선물용 3kg</option>   <!-- value값 지정 -->
+                    <option value="p5" selected>선물용 5kg</option>
+                        <!-- selected: 기본값 지정 -->
+                    <option value="f3">가정용 3kg</option> 
+                    <option value="f5">가정용 5kg</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend><b>상품선택</b></legend>
+            <p><b>주문할 상품을 선택해 주세요</b></p>
+            <label><input type="text" list="goods">
+                <datalist id="goods">     <!-- datalist옵션: dropdown으로 선택가능/ 입력도 가능 -->
+                    <option value="p3">선물용 3kg</option>   <!-- value값 지정 -->
+                    <option value="p5" selected>선물용 5kg</option>
+                    <option value="f3" selected>가정용 3kg</option> 
+                    <option value="f5">가정용 5kg</option>
+                </datalist>
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>
