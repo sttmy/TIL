@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function textCh(){
+            document.querySelector('h1').innerHTML 
+            = "자바스크립트로 변경 <br>원래는 'Header1'이었습니다"
+        }
+        function escpCh(){
+            document.querySelector('h1').innerHTML
+            = "i 태그입니다 <br> &lt;i&gt;i태그입니다&lt;/i&gt"
+        }
+        //tch
+        function changeText(){
+            const header = document.getElementById('header')
+            const originalText = header.innerHTML;
+            header.innerHTML = '자바스크립트로 변경<br>';
+            header.innerHTML += `원래는 '${originalText}'이었습니다`;
+        }
+        function escapeText(){
+            const header1 = document.getElementById('header')
+            header1.innerHTML = '<i>i태그입니다</i><br>'
+            header1.innerHTML += '&lt;i&gt;i태그입니다&lt;/i&gt'
+        }
+
+    </script>
+</head>
+<body style="margin: 40px">
+    <h1 id="header">Header1</h1>
+    <button onclick="textCh()">문자 변경</button>
+    <button onclick="escpCh()">Escape 문자</button>
+    <button onclick="changeText()">ChangeText</button>
+    <button onclick="escapeText()">EscapeText</button>
+</body>
+</html>
+
+
+
+

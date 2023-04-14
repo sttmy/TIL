@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성순서 오류</title>              
+    <!-- head에 위치한 script의 style은 적용이 안 됨 -->
+    <!-- <script>
+        document.querySelector('h1').style.backgroundColor = "yellow";
+        document.querySelector('h2').style.backgroundColor = "skyblue";
+    </script>        -->
+    <script>
+        function handler(){
+            document.querySelector('h1').style.backgroundColor = "yellow";
+            document.querySelector('h2').style.backgroundColor = "skyblue";
+        }        
+    </script>       
+</head>
+<body onload="handler()">
+    <h1>header1</h1>                    
+    <h2>header3</h2>
+    <!-- <script>
+        document.querySelector('h1').style.backgroundColor = "yellow";
+        document.querySelector('h2').style.backgroundColor = "skyblue";
+    </script>        -->
+
+    <!-- style생성순서 오류 수정방법 
+    1.head의 script를 body로 옮긴다
+    2.head에 function을 새롭게 지정하고, <body onload="함수명()">을 넣어준다.-->
+</body>
+</html>

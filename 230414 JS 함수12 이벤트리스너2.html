@@ -1,0 +1,57 @@
+<!-- p104 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 300px;
+            margin: 10px auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src = "images/easys-1.jpg" id="cover">
+    </div>  
+    <script>
+        // ///// 이벤트리스너를 사용하지 않은 경우
+        // var cover = document.getElementById("cover")
+        // function changePic(){
+        //     cover.src= "images/easys-2.jpg"
+        // }
+        // function originPic(){
+        //     cover.src= "images/easys-1.jpg"
+        // }
+        // cover.onclick = changePic;   // onclick 할 때 변함
+
+        ///// 이벤트리스너를 사용한 경우
+        var cover = document.getElementById("cover")
+        cover.addEventListener("mouseover", changePic, false)
+        cover.addEventListener("mouseout", originPic, false)
+        // cover.addEventListener("mouseover", changePic)
+        // cover.addEventListener("mouseout", originPic)
+        // mouseout 없으면 원래대로 안 돌아감
+
+        function changePic(){
+            cover.src= "images/easys-2.jpg"
+        }
+        function originPic(){
+            cover.src= "images/easys-1.jpg"
+        }
+
+        // ///// 이벤트리스너를 사용하고 익명함수 사용하는 경우
+        // var cover = document.getElementById("cover")
+        // cover.addEventListener("mouseover", function(){
+        //     cover.src= "images/easys-2.jpg";});  
+        // cover.addEventListener("mouseout", function(){
+        //     cover.src= "images/easys-1.jpg";});
+
+    </script>
+</body>
+</html>

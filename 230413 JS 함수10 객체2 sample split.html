@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sample = "ㅠㅠA quick brown fox 갈색의 재빠른 여우가 Jump over 게으른 개를 The lazy dog. ㅋㅋ";
+        let newStr = sample.replace(/[A-Z]/,'대');  // 대문자로 시작한 문자 '대'로 바꾸기
+        console.log(newStr);
+        newStr = sample.replace(/o/, 'O')  // 한 개만 바꾸기
+        console.log(newStr);
+        newStr = sample.replace(/o/g, 'O')  // 전부다 바꾸기
+        console.log(newStr);
+        console.log(sample.replace(/[A-Z]\w+/g, 'XXX'))  //대문자 들어간 단어 xxx로 바꾸기
+
+        //한글제거
+        console.log(sample.replace(/[ㄱ-ㅎ ㅏ-ㅣ 가-힣]/g, ' '))
+
+        //split
+        let fruits = '사과, 배, 감, 포도';
+        let fruitsArray = fruits.split(',');
+        console.log(fruitsArray);
+
+        fruits = '사과,    감,포도';
+        fruitsArray = fruits.split(',');   //띄어쓴대로 출력
+        console.log(fruitsArray)
+
+        fruits = '사과,감      ,포도';
+        fruitsArray = fruits.split(',');   //띄어쓴대로 출력
+        console.log(fruitsArray)
+
+        fruits = '사과,    감, 포도';
+        fruitsArray = fruits.split(',').map(s=>s.trim());   //공백 trim  
+        console.log(fruitsArray)
+
+    </script>
+</body>
+</html>

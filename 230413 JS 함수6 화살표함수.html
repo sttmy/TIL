@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array = [0,1,2,3,4,5,6,7,8,9];
+        //map        
+        let num = array.map((value) => value**2);
+        console.log(num);
+
+        //filter
+        let evennum = array.filter(value => value%2==0);
+        console.log(`원래배열: ${array}`)
+        console.log(`짝수배열: ${evennum}`)
+
+        // forEach
+        let ech = array.forEach((value, index) => 
+            console.log(`${index}번째 요소: ${value}`))
+
+        // 메소드체이닝: 함수를 줄줄이 사용하는 방법 (R의 파이프라인 같은 것임)
+        array.filter((value) => value%2==1)
+        .map(value => value**2)
+        .forEach(value => console.log(value))
+        // .forEach((array) => console.log(array))
+
+    </script>
+</body>
+</html>

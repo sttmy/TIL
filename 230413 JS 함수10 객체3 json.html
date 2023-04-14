@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const books = [{
+        "name": 'JavaScript 기초',
+        "price": 18000,
+        "publisher": '신촌출판사',
+        }, {"name": 'Python 기초',
+        "price": 30000,
+        "publisher": '신촌출판사'},
+        {"name": 'R 기초',
+        "price": 29000,
+        "publisher": '더조은출판사'}]
+        console.log(JSON.stringify(books))            // 들여쓰기 안하기
+        console.log(JSON.stringify(books, null, 2))    // 세번째 매개변수 2는 들여쓰기 2칸 옵션
+        console.log(JSON.stringify(books, ['name'], 2))  // 두번째 매개변수는 리스트형태로
+        // 2번째 매개변수는 객체에서 어떤 속성만 선택해서 추출하고 싶을 때 사용하지만
+        // 거의 사용하지 않음. 일반적으로 null값을 넣어서 사용함
+        // 2: 들여쓰기 설정
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{text-align: center;}
+    </style>
+</head>
+<body style="margin: 50px">
+    <!-- <label>중간고사: <input type="text" id="mid" placeholder="100점 만점으로 입력하세요"></label><br>
+    <label>기말고사: <input type="text" id="fin" placeholder="100점 만점으로 입력하세요"></label><br>
+    <label>과제: <input type="text" id="hw" placeholder="100점 만점으로 입력하세요"></label><br>
+    <button onclick="wMean()">학점 계산</button><br>
+    <label>가중평균: <p id="score"></p></label><br>
+    <label>학점: <p id="result"></p></label>
+    <script>
+        function wMean(){
+            const midTag = document.getElementById('mid');
+            const midStr = numTag.value;
+            const mid = Number(numStr);
+            const finStr = numTag.value;
+            const finTag = document.getElementById('fin');
+            const fin = Number(numStr);
+            const hwTag = document.getElementById('hw');
+            const hwStr = numTag.value;
+            const hw = Number(numStr);
+            const score = mid*0.3 + fin*0.5 + hw*0.2;
+            const resTag = document.getElementById("result");
+            switch(score) {
+            case (score>=90):
+                result = "A";
+            case (score>80):
+                result = "B";
+            case (score>=70):
+                result = "C";
+            case (score>=60):
+                result = "D";
+            default:
+                result = "F";
+            }
+        }
+    </script>    -->
+
+    <!-- tch -->
+    <table>
+        <tr>
+            <td>중간고사:</td>
+            <td><input type="text" id="mid" placeholder="100점 만점으로 입력하세요"></td>
+        </tr>
+            <td>기말고사:</td>
+            <td><input type="text" id="fin" placeholder="100점 만점으로 입력하세요"></td>
+        </tr>
+            <td>과제:</td>
+            <td><input type="text" id="hw" placeholder="100점 만점으로 입력하세요"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="score()">학점계산</button></td>
+        </tr>
+        </tr>
+            <td>가중평균:</td>
+            <td id="wtdavg"></td>
+        </tr>
+        </tr>
+            <td>학점:</td>
+            <td id="grade"></td>
+        </tr>
+    </table>
+    <script>
+        function score(){
+            const mid = Number(document.getElementById('mid').value);
+            const fin = Number(document.getElementById('fin').value);
+            const hw = Number(document.getElementById('hw').value);
+            const wtdavg = mid*0.3 + fin*0.5 + hw*0.2;
+            const avgTag = document.getElementById('wtdavg');
+            avgTag.innerHTML = wtdavg;
+
+            let grade;
+            switch (parseInt(wtdavg/10)){
+                case 10: 
+                case 9:
+                    grade="A"; break;
+                case 8:
+                    grade="B"; break;
+                case 7:
+                    grade="C"; break;
+                case 6:
+                    grade="D"; break;
+                default: 
+                    grade="F"
+            }
+            const gradeTag = document.getElementById('grade');
+            gradeTag.innerHTML = grade;
+        }
+    </script>
+</body>
+</html>
+
+<!-- 가중평균: 중간*0.3 기말*0.5 과제*0.2
+학점: A~F -->

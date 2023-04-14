@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    ////// 함수
+    function addNumber(){
+        var num1 = 2;
+        var num2 = 3;
+        var sum = num1+num2;
+        // alert("Result:" + sum)   
+    }
+    addNumber();
+
+    ////// var의 호이스팅 문제
+    function addnum(){
+        var s = 10 + 20;
+        console.log(s)
+    }
+    addnum();
+    var s;
+    s = 100;
+    console.log(s)
+    // 위를 모두 실행하면 s값이 30, 100 둘다 찍힘. var의 호이스팅 문제임
+
+    var x = 10;
+    function displaynum(){
+        console.log("x is "+x);
+        var y = 20;                 // y is 20이 출력됨
+        console.log("y is "+y);   
+        var y = 20;                 // y is undefined 출력됨
+        y = 20;                     // y is undefined 출력됨
+    }
+    displaynum()
+
+    ////// let
+    function calcSum(n){
+        let sumall=0;
+        for (let i=1; i<=n; i++){
+            sumall += i
+        }
+        console.log(sumall);
+        sumall=100;
+        console.log(sumall);
+    }
+    calcSum(5);
+    let sumall;
+    console.log(sumall)
+
+    </script>
+</body>
+</html>

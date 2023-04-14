@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/event1.css">
+</head>
+<body>
+    <!-- 이벤트: 마우스/키보드 움직이면 무엇인가 발생되는 것 -->
+    <!-- DOM Document Object Model HTML 객체 조작 -->
+    <ul>
+        <!-- <li><a href="#" onclick="alert('버튼을 클릭했습니다')">Green</a></li>
+        <li><a href="#" onclick="alert('버튼을 클릭했습니다')">Orange</a></li>
+        <li><a href="#" onclick="alert('버튼을 클릭했습니다')">Purple</a></li> -->
+        <li><a href="#" onclick="changeBg('green')">Green</a></li>
+        <li><a href="#" onclick="changeBg('orange')">Orange</a></li>
+        <li><a href="#" onclick="changeBg('purple')">Purple</a></li>
+    </ul>
+    <div id="result"></div>
+    <script>
+        function changeBg(color) {
+            var result = document.querySelector('#result'); 
+            //querySelector: ElementById와 같은 기능
+            result.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

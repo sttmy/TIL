@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>문서를 열면 팝업창이 표시됩니다</p>
+    <script>
+        //팝업창 위치 지정하기(중앙으로)   // 안 됨
+        function openCenter(doc, win, w, h){   
+            var left = (screen.availWidth - w)/2;  //전체 availwidth에서 w=500을 빼주고 좌우 반으로나눔
+            var top = (screen.availHeight - h)/2;  //전체 availheight에서 h=400을 빼주고 위아래 반으로나눔            
+            var opt = "left = "+ left + ", top = " + top + ", width = " + w + ", height = " + h;
+            "left = 250 , top = 200 , width = 500, height = 400"
+            window.open(doc, win, opt);
+        }
+        openCenter("popup1.html", "pop", 500, 400); // 이 사이즈로 띄워라
+        // window.open("popup1.html", "", "left = 250 , top = 200 , width = 500, height = 400")
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nodelist.css">
+</head>
+<body id="container">
+    <h1>Web Programming</h1>
+    <p>공부할 주제를 기록해보세요</p>
+    <form action="">
+        <input type="text" id="subject" autofocus>
+        <button onclick="newRegister(); return false">추가</button>
+    </form>
+    <hr>
+    <ul id="itemList"></ul>
+    <script>
+        function newRegister() {
+            // input에 입력한 내용을 받아옴
+            var newItem = document.createElement("li");
+            var subject = document.querySelector("#subject");
+            var newText = document.createTextNode(subject.value);
+            newItem.appendChild(newText);
+
+            // 받아온 내용을 출력
+            var itemList = document.querySelector("#itemList");
+            itemList.insertBefore(newItem, itemList.childNodes[0]); 
+            // insertBefore: 자식노드중 첫번째 노드 앞에 추가 
+            // 최근에 입력한 값이 제일 위에 출력되고 나머지는 점점 아래로 밀림
+
+            subject.value="";
+
+            // 클릭하면 출력된 내용 지우기
+            var items = document.querySelectorAll('li'); //모든 li태그를 가져옴
+            for (i=0; i<items.length; i++){
+                items[i].addEventListener("click", function(){
+                    if(this.parentNode)
+                        this.parentNode.removeChild(this);
+                })
+
+            }
+        }
+    </script>
+</body>
+</html>

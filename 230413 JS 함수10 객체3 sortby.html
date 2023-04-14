@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- https://lodash.com 자바스크립트 라이브러리 -->
+    <!-- CDN Contents Delivery Network 콘텐츠를 전송하라는 뜻 -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+        // 데이터 생성
+        const books = [{
+            name: 'JavaScript 기초',
+            price: 18000,
+            publisher: '신촌출판사',
+            }, {name: 'Python 기초',
+            price: 30000,
+            publisher: '신촌출판사'},
+            {name: 'R 기초',
+            price: 29000,
+            publisher: '더조은출판사'}
+            , {name: '딥러닝 기초',
+            price: 25000,
+            publisher: '위키북스'}]
+        
+        // 가격 기준으로 sort 정렬 후 출력
+        const output = _.sortBy(books, (books) => books.price);
+        console.log(JSON.stringify(output, null, 2))
+
+    </script>
+</body>
+</html>
